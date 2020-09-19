@@ -1,0 +1,16 @@
+#read .rec by HS 20-09-19
+import mne
+a=open('ucddb002.rec','r') 
+b=a.read()
+#단순 open read는 에러 발생 
+#UnicodeDecodeError: 'cp949' codec can't decode byte 0xf0 in position 3840: illegal multibyte sequence
+
+a=open('ucddb002.rec','r',encoding='UTF8')
+b=a.read()
+#encoding UTF8로 변경해도 오류발생 
+#UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf0 in position 3840: invalid continuation byte
+
+ata = mne.io.read_raw_edf('ucddb028_lifecard.rec')
+#needed to convert .rec to .csv
+#NotImplementedError: Only EDF and BDF files are supported, got rec.
+

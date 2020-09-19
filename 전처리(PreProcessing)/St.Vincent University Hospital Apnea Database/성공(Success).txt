@@ -1,0 +1,13 @@
+#read edf by HS 20-09-19
+#existing problem : index is not datetime 시간으로 변경할 필요 있음
+import mne
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+data=mne.io.read_raw_edf('ucddb005_lifecard.edf')
+raw_data = data.get_data()
+info = data.info
+channels = data.ch_names
+a=pd.DataFrame(raw_data.T, columns = channels)
+a['chan 1'].plot()
+plt.show()
