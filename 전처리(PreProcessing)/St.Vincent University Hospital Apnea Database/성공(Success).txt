@@ -11,3 +11,20 @@ channels = data.ch_names
 a=pd.DataFrame(raw_data.T, columns = channels)
 a['chan 1'].plot()
 plt.show()
+
+
+#channels name change and add signals information by HS 2020-09-25
+Each channel means three-channel Holter ECGs (V5, CC5, V5R).
+file Info | 7 non-empty values
+ bads: []
+ ch_names: chan 1, chan 2, chan 3
+ chs: 3 EEG
+ custom_ref_applied: False
+ highpass: 0.0 Hz
+ lowpass: 64.0 Hz
+ meas_date: 2006-01-01 09:07:03 UTC
+ nchan: 3
+ projs: []
+ sfreq: 128.0 Hz
+25개 csv 6.3GB
+#event label, sleep stage label need to add.
