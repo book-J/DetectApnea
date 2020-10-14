@@ -1,0 +1,6 @@
+randomforest 20-10-14 by JH
+MIT-BIH 데이터의 단일 샘플로부터 수면단계 슬립스테이지를 logistic, randomforest, svm으로 측정
+Wake -> -2, Rem -> 0 Movement -> -1 로 변환
+Nan값 ffill로 채움
+4개 피처 사용
+logistic 45.90%, RandomForest 57.38%
