@@ -4,3 +4,9 @@ Wake -> -2, Rem -> 0 Movement -> -1 로 변환
 Nan값 ffill로 채움
 4개 피처 사용
 logistic 45.90%, RandomForest 57.38%
+
+LogisticRegression 20-10-19 by JH
+MIT-BIH 데이터 모든 샘플의 ECG 시그널과 sleep stage를 라벨로 사용
+모두 읽어들인후 train test로 split한후 결과 정확도 측정
+Nan값 ffill로 채움
+정확도 : 38.95%
