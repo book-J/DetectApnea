@@ -9,4 +9,9 @@ LogisticRegression 20-10-19 by JH
 MIT-BIH 데이터 모든 샘플의 ECG 시그널과 sleep stage를 라벨로 사용
 모두 읽어들인후 train test로 split한후 결과 정확도 측정
 Nan값 ffill로 채움
-정확도 : 38.95%
+정확도 : 38.95021749542406%
+
+label domain 줄이기 20-10-30 by JH
+Stage를 Wake 0 그 이외 모드 1로 자고 있는지 깨어있는지 검사하는 모델
+LogisticRegression 정확도 0.698592722321687
+RandomForest 0.6988380185291552
